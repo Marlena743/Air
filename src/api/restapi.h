@@ -19,6 +19,10 @@
  #include "../data/station.h"
  #include "../data/sensor.h"
  #include "../data/measurement.h"
+ #include "networkmanager.h"
+ 
+ 
+ 
  
  /**
   * @class RestApi
@@ -29,6 +33,21 @@
      Q_OBJECT
  
  public:
+
+
+
+
+    /**
+     * @brief Checks if network is available
+     * @return True if network is available, false otherwise
+     */
+    bool isNetworkAvailable() const;
+
+    /**
+     * @brief Returns the network manager
+     * @return Pointer to the network manager
+     */
+    NetworkManager* getNetworkManager() const;
      /**
       * @brief Constructor
       * @param parent Parent object
@@ -115,7 +134,7 @@
      QNetworkAccessManager *networkManager;
      QTimer *timeoutTimer;
      const int TIMEOUT_MS = 10000;
-     
+     NetworkManager *netManager;
      const QString BASE_URL = "https://api.gios.gov.pl/pjp-api/rest";
      const QString STATIONS_ENDPOINT = "/station/findAll";
      const QString SENSORS_ENDPOINT = "/station/sensors";

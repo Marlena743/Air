@@ -5,10 +5,23 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = AirQualityMonitor
 TEMPLATE = app
 
+# Rozróżnienie między trybem testowym a zwykłym
+CONFIG(test) {
+    # Pliki źródłowe dla trybu testowego
+    SOURCES += \
+        tests/test_dataanalyzer.cpp \
+        tests/test_jsonrepository.cpp
+} else {
+    # Główny plik main.cpp tylko w zwykłym trybie
+    SOURCES += \
+        main.cpp
+}
+
+# Wspólne pliki źródłowe dla wszystkich trybów
 SOURCES += \
-    main.cpp \
     mainwindow.cpp \
     src/api/restapi.cpp \
+    src/api/networkmanager.cpp \
     src/data/station.cpp \
     src/data/sensor.cpp \
     src/data/measurement.cpp \
@@ -18,6 +31,7 @@ SOURCES += \
 HEADERS += \
     mainwindow.h \
     src/api/restapi.h \
+    src/api/networkmanager.h \
     src/data/station.h \
     src/data/sensor.h \
     src/data/measurement.h \

@@ -1,0 +1,10 @@
+release/test_main.o
+release/station.o
+release/sensor.o
+release/measurement.o
+release/jsonrepository.o
+release/dataanalyzer.o
+release/restapi.o
+release/moc_jsonrepository.o
+release/moc_dataanalyzer.o
+release/moc_restapi.o

@@ -33,33 +33,40 @@
       * @param parent Parent object
       */
      explicit JsonRepository(QObject *parent = nullptr);
-     
+ 
      /**
       * @brief Saves stations to a JSON file
       * @param stations List of stations
       * @return True if successful, false otherwise
       */
      bool saveStations(const QList<Station> &stations);
-     
+ 
      /**
       * @brief Loads stations from a JSON file
       * @return List of stations
       */
      QList<Station> loadStations();
-     
+ 
      /**
       * @brief Saves sensors to a JSON file
       * @param sensors List of sensors
       * @return True if successful, false otherwise
       */
      bool saveSensors(const QList<Sensor> &sensors);
-     
+ 
      /**
       * @brief Loads sensors from a JSON file
       * @return List of sensors
       */
      QList<Sensor> loadSensors();
-     
+ 
+     /**
+      * @brief Loads sensors for a specific station from a JSON file
+      * @param stationId Station ID
+      * @return List of sensors
+      */
+     QList<Sensor> loadSensors(int stationId);
+ 
      /**
       * @brief Saves measurements to a JSON file
       * @param measurements List of measurements
@@ -67,7 +74,7 @@
       * @return True if successful, false otherwise
       */
      bool saveMeasurements(const QList<Measurement> &measurements, int sensorId);
-     
+ 
      /**
       * @brief Loads measurements from a JSON file
       * @param sensorId Sensor ID
@@ -75,9 +82,9 @@
       * @param endDate End date (optional)
       * @return List of measurements
       */
-     QList<Measurement> loadMeasurements(int sensorId, 
-                                        const QDateTime &startDate = QDateTime(),
-                                        const QDateTime &endDate = QDateTime());
+     QList<Measurement> loadMeasurements(int sensorId,
+                                         const QDateTime &startDate = QDateTime(),
+                                         const QDateTime &endDate = QDateTime());
  
  signals:
      /**
@@ -92,20 +99,20 @@
      const QString STATIONS_FILE = "stations.json";
      const QString SENSORS_FILE = "sensors.json";
      const QString MEASUREMENTS_FILE_PREFIX = "measurements_";
-     
+ 
      /**
       * @brief Ensures that the data directory exists
       * @return True if the directory exists or was created, false otherwise
       */
      bool ensureDataDirectoryExists();
-     
+ 
      /**
       * @brief Gets the full path to a file
       * @param fileName File name
       * @return Full path to the file
       */
      QString getFilePath(const QString &fileName) const;
-     
+ 
      /**
       * @brief Gets the measurements file name for a sensor
       * @param sensorId Sensor ID
@@ -115,3 +122,4 @@
  };
  
  #endif // JSONREPOSITORY_H
+ 

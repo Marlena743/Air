@@ -1,0 +1,10 @@
+debug/test_main.o
+debug/station.o
+debug/sensor.o
+debug/measurement.o
+debug/jsonrepository.o
+debug/dataanalyzer.o
+debug/restapi.o
+debug/moc_jsonrepository.o
+debug/moc_dataanalyzer.o
+debug/moc_restapi.o

@@ -1,0 +1,72 @@
+[
+    {
+        "date": "2025-04-24T11:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 290
+    },
+    {
+        "date": "2025-04-24T10:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 304
+    },
+    {
+        "date": "2025-04-24T09:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 328
+    },
+    {
+        "date": "2025-04-24T08:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 334
+    },
+    {
+        "date": "2025-04-24T07:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 337
+    },
+    {
+        "date": "2025-04-24T06:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 283
+    },
+    {
+        "date": "2025-04-24T05:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 257
+    },
+    {
+        "date": "2025-04-24T04:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 262
+    },
+    {
+        "date": "2025-04-24T03:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 265
+    },
+    {
+        "date": "2025-04-24T02:00:00",
+        "paramCode": "",
+        "sensorId": 1888,
+        "valid": true,
+        "value": 274
+    }
+]
