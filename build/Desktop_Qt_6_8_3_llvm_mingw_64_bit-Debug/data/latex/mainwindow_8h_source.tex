@@ -1,0 +1,136 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}\mbox{\hyperlink{mainwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{restapi_8h}{api/restapi.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{station_8h}{data/station.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sensor_8h}{data/sensor.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{measurement_8h}{data/measurement.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{jsonrepository_8h}{database/jsonrepository.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dataanalyzer_8h}{analysis/dataanalyzer.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QChart>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QChartView>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QLineSeries>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QComboBox>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QDateTimeEdit>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QDateTimeAxis>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QValueAxis>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QProgressBar>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <QGroupBox>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <QFormLayout>}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ <QGridLayout>}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <QStatusBar>}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <QMutex>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <QWaitCondition>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <QApplication>}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ <QHeaderView>}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0b3f83cd54ae45c144466e5616e45fb9}{showStatusMessage}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ loadStations();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ filterStationsByCity();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ loadSensors();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ loadMeasurements();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ saveMeasurementsToDatabase();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ loadMeasurementsFromDatabase();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ analyzeMeasurements();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ updateChart();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ updateDateRange();}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ handleApiError(\textcolor{keyword}{const}\ QString\ \&error);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ handleDatabaseError(\textcolor{keyword}{const}\ QString\ \&error);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{comment}{//\ UI\ components}}
+\DoxyCodeLine{00129\ \ \ \ \ QComboBox\ *stationComboBox;}
+\DoxyCodeLine{00130\ \ \ \ \ QLineEdit\ *cityFilterEdit;}
+\DoxyCodeLine{00131\ \ \ \ \ QPushButton\ *filterButton;}
+\DoxyCodeLine{00132\ \ \ \ \ QPushButton\ *loadStationsButton;}
+\DoxyCodeLine{00133\ \ \ \ \ QTableWidget\ *stationTable;}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ QComboBox\ *sensorComboBox;}
+\DoxyCodeLine{00136\ \ \ \ \ QPushButton\ *loadSensorsButton;}
+\DoxyCodeLine{00137\ \ \ \ \ QTableWidget\ *sensorTable;}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ QPushButton\ *loadMeasurementsButton;}
+\DoxyCodeLine{00140\ \ \ \ \ QPushButton\ *saveMeasurementsButton;}
+\DoxyCodeLine{00141\ \ \ \ \ QPushButton\ *loadFromDatabaseButton;}
+\DoxyCodeLine{00142\ \ \ \ \ QDateTimeEdit\ *startDateEdit;}
+\DoxyCodeLine{00143\ \ \ \ \ QDateTimeEdit\ *endDateEdit;}
+\DoxyCodeLine{00144\ \ \ \ \ QPushButton\ *updateDateRangeButton;}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ QChartView\ *chartView;}
+\DoxyCodeLine{00147\ \ \ \ \ QChart\ *chart;}
+\DoxyCodeLine{00148\ \ \ \ \ QLineSeries\ *series;}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ QTableWidget\ *measurementTable;}
+\DoxyCodeLine{00151\ \ \ \ \ QGroupBox\ *analysisGroupBox;}
+\DoxyCodeLine{00152\ \ \ \ \ QLabel\ *minValueLabel;}
+\DoxyCodeLine{00153\ \ \ \ \ QLabel\ *maxValueLabel;}
+\DoxyCodeLine{00154\ \ \ \ \ QLabel\ *avgValueLabel;}
+\DoxyCodeLine{00155\ \ \ \ \ QLabel\ *trendLabel;}
+\DoxyCodeLine{00156\ \ \ \ \ QLabel\ *minDateLabel;}
+\DoxyCodeLine{00157\ \ \ \ \ QLabel\ *maxDateLabel;}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ QProgressBar\ *progressBar;}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{comment}{//\ Data\ components}}
+\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{class_rest_api}{RestApi}}\ *api;}
+\DoxyCodeLine{00163\ \ \ \ \ \mbox{\hyperlink{class_json_repository}{JsonRepository}}\ *repository;}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{class_data_analyzer}{DataAnalyzer}}\ *analyzer;}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ QList<Station>\ stations;}
+\DoxyCodeLine{00167\ \ \ \ \ QList<Sensor>\ sensors;}
+\DoxyCodeLine{00168\ \ \ \ \ QList<Measurement>\ measurements;}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ QThread\ workerThread;}
+\DoxyCodeLine{00171\ \ \ \ \ QMutex\ mutex;}
+\DoxyCodeLine{00172\ \ \ \ \ QWaitCondition\ condition;}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{bool}\ abort;}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi();}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ createChart();}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ applyCustomStyle();}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{void}\ centerOnScreen();}
+\DoxyCodeLine{00194\ \};}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

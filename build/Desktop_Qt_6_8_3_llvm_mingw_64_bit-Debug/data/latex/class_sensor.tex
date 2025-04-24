@@ -1,0 +1,187 @@
+\doxysection{Sensor Class Reference}
+\hypertarget{class_sensor}{}\label{class_sensor}\index{Sensor@{Sensor}}
+
+
+Represents a measurement sensor.  
+
+
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b}\label{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b} 
+{\bfseries Sensor} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_a9d413dfbde03f73be4a820a858ae01ae}{Sensor}} (int id, int station\+Id, const QString \&param\+Name, const QString \&param\+Formula, const QString \&param\+Code, int id\+Param)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sensor_a2f57593dc57b88e0667907e282b4e2ef}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sensor ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sensor_a7016ff1ef9122ffff86056a952c09e84}{get\+Station\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the station ID. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_sensor_a73dd54567fd9b1f459e2a905fb8c6844}{get\+Param\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parameter name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_sensor_ab6dc67a12cdfef08de45f6f434056a63}{get\+Param\+Formula}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parameter formula. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_sensor_adc236a58d76be5e97d05c76a3b397c58}{get\+Param\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parameter code. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sensor_ab7dd219217cf6e2e084167ab8cb9f99f}{get\+Id\+Param}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parameter ID. \end{DoxyCompactList}\item 
+QJson\+Object \mbox{\hyperlink{class_sensor_a76ff4b46ff7bf80bf47a944dde15f7c5}{to\+Json}} () const
+\begin{DoxyCompactList}\small\item\em Converts the sensor to JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sensor}{Sensor}} \mbox{\hyperlink{class_sensor_a7886a1b1ce6e2bdb1071a665c097fb27}{from\+Json}} (const QJson\+Object \&json)
+\begin{DoxyCompactList}\small\item\em Creates a sensor from JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a measurement sensor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sensor_a9d413dfbde03f73be4a820a858ae01ae}\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily \label{class_sensor_a9d413dfbde03f73be4a820a858ae01ae} 
+Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{station\+Id}{, }\item[{const QString \&}]{param\+Name}{, }\item[{const QString \&}]{param\+Formula}{, }\item[{const QString \&}]{param\+Code}{, }\item[{int}]{id\+Param}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+{\em station\+Id} & \doxylink{class_station}{Station} ID \\
+\hline
+{\em param\+Name} & Parameter name \\
+\hline
+{\em param\+Formula} & Parameter formula \\
+\hline
+{\em param\+Code} & Parameter code \\
+\hline
+{\em id\+Param} & Parameter ID \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sensor_a7886a1b1ce6e2bdb1071a665c097fb27}\index{Sensor@{Sensor}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_sensor_a7886a1b1ce6e2bdb1071a665c097fb27} 
+\mbox{\hyperlink{class_sensor}{Sensor}} Sensor\+::from\+Json (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a sensor from JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & JSON object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor}{Sensor} object 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_a2f57593dc57b88e0667907e282b4e2ef}\index{Sensor@{Sensor}!getId@{getId}}
+\index{getId@{getId}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_sensor_a2f57593dc57b88e0667907e282b4e2ef} 
+int Sensor\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the sensor ID. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor}{Sensor} ID 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_ab7dd219217cf6e2e084167ab8cb9f99f}\index{Sensor@{Sensor}!getIdParam@{getIdParam}}
+\index{getIdParam@{getIdParam}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getIdParam()}{getIdParam()}}
+{\footnotesize\ttfamily \label{class_sensor_ab7dd219217cf6e2e084167ab8cb9f99f} 
+int Sensor\+::get\+Id\+Param (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the parameter ID. 
+
+\begin{DoxyReturn}{Returns}
+Parameter ID 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_adc236a58d76be5e97d05c76a3b397c58}\index{Sensor@{Sensor}!getParamCode@{getParamCode}}
+\index{getParamCode@{getParamCode}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getParamCode()}{getParamCode()}}
+{\footnotesize\ttfamily \label{class_sensor_adc236a58d76be5e97d05c76a3b397c58} 
+QString Sensor\+::get\+Param\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the parameter code. 
+
+\begin{DoxyReturn}{Returns}
+Parameter code 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_ab6dc67a12cdfef08de45f6f434056a63}\index{Sensor@{Sensor}!getParamFormula@{getParamFormula}}
+\index{getParamFormula@{getParamFormula}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getParamFormula()}{getParamFormula()}}
+{\footnotesize\ttfamily \label{class_sensor_ab6dc67a12cdfef08de45f6f434056a63} 
+QString Sensor\+::get\+Param\+Formula (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the parameter formula. 
+
+\begin{DoxyReturn}{Returns}
+Parameter formula 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_a73dd54567fd9b1f459e2a905fb8c6844}\index{Sensor@{Sensor}!getParamName@{getParamName}}
+\index{getParamName@{getParamName}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getParamName()}{getParamName()}}
+{\footnotesize\ttfamily \label{class_sensor_a73dd54567fd9b1f459e2a905fb8c6844} 
+QString Sensor\+::get\+Param\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the parameter name. 
+
+\begin{DoxyReturn}{Returns}
+Parameter name 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_a7016ff1ef9122ffff86056a952c09e84}\index{Sensor@{Sensor}!getStationId@{getStationId}}
+\index{getStationId@{getStationId}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{getStationId()}{getStationId()}}
+{\footnotesize\ttfamily \label{class_sensor_a7016ff1ef9122ffff86056a952c09e84} 
+int Sensor\+::get\+Station\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the station ID. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_station}{Station} ID 
+\end{DoxyReturn}
+\Hypertarget{class_sensor_a76ff4b46ff7bf80bf47a944dde15f7c5}\index{Sensor@{Sensor}!toJson@{toJson}}
+\index{toJson@{toJson}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_sensor_a76ff4b46ff7bf80bf47a944dde15f7c5} 
+QJson\+Object Sensor\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the sensor to JSON. 
+
+\begin{DoxyReturn}{Returns}
+JSON representation of the sensor 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/data/\mbox{\hyperlink{sensor_8h}{sensor.\+h}}\item 
+src/data/\mbox{\hyperlink{sensor_8cpp}{sensor.\+cpp}}\end{DoxyCompactItemize}

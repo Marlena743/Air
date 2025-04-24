@@ -1,0 +1,201 @@
+\doxysection{Rest\+Api Class Reference}
+\hypertarget{class_rest_api}{}\label{class_rest_api}\index{RestApi@{RestApi}}
+
+
+Wrapper for the GIOŚ REST API.  
+
+
+
+
+{\ttfamily \#include $<$restapi.\+h$>$}
+
+Inheritance diagram for Rest\+Api\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rest_api}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rest_api_a7e569ab47c8257cb1e66ba77cc56deb3}{stations\+Received}} (const QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ \&stations)
+\begin{DoxyCompactList}\small\item\em Signal emitted when stations are received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_a0d7f9e99f1990cbd41bfa7e6c7778494}{sensors\+Received}} (const QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ \&sensors)
+\begin{DoxyCompactList}\small\item\em Signal emitted when sensors are received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_ac1be4110bebde6eb70bb30f51a97aab5}{measurements\+Received}} (const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&measurements)
+\begin{DoxyCompactList}\small\item\em Signal emitted when measurements are received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_a1b6747231d0b6e090484ad07d06dfb4c}{error\+Occurred}} (const QString \&error\+Message)
+\begin{DoxyCompactList}\small\item\em Signal emitted when an error occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rest_api_ab2a49ee69aac9e6b9fadb2cf484b0c17}{Rest\+Api}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_rest_api_af2ea2c30a01ab5a544cd78893d76f612}\label{class_rest_api_af2ea2c30a01ab5a544cd78893d76f612} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Rest\+Api} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_rest_api_a62dc7e2716bb42a5500446900148716b}\label{class_rest_api_a62dc7e2716bb42a5500446900148716b} 
+void {\bfseries get\+All\+Stations} ()
+\begin{DoxyCompactList}\small\item\em Gets all stations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_af7e5c71e1014f6fdfb23dfc0735979a9}{get\+Stations\+By\+City}} (const QString \&city\+Name)
+\begin{DoxyCompactList}\small\item\em Gets stations by city name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_adc1e2216bf468b3d3b4ccc36a3483ff0}{get\+Sensors}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em Gets sensors for a station. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_aee873eecd3cf18995b9b0d37427e5b99}{get\+Measurements}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em Gets measurements for a sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rest_api_af92e8d7a19d3519e1eb099885019d156}{get\+Air\+Quality\+Index}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the air quality index for a station. \end{DoxyCompactList}\item 
+\Hypertarget{class_rest_api_afcda61c9b847fd79c9fa7b1a4b3ef736}\label{class_rest_api_afcda61c9b847fd79c9fa7b1a4b3ef736} 
+void {\bfseries cancel\+Requests} ()
+\begin{DoxyCompactList}\small\item\em Cancels all pending requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for the GIOŚ REST API. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rest_api_ab2a49ee69aac9e6b9fadb2cf484b0c17}\index{RestApi@{RestApi}!RestApi@{RestApi}}
+\index{RestApi@{RestApi}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{RestApi()}{RestApi()}}
+{\footnotesize\ttfamily \label{class_rest_api_ab2a49ee69aac9e6b9fadb2cf484b0c17} 
+Rest\+Api\+::\+Rest\+Api (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rest_api_a1b6747231d0b6e090484ad07d06dfb4c}\index{RestApi@{RestApi}!errorOccurred@{errorOccurred}}
+\index{errorOccurred@{errorOccurred}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{errorOccurred}{errorOccurred}}
+{\footnotesize\ttfamily \label{class_rest_api_a1b6747231d0b6e090484ad07d06dfb4c} 
+void Rest\+Api\+::error\+Occurred (\begin{DoxyParamCaption}\item[{const QString \&}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when an error occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Message} & Error message \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_af92e8d7a19d3519e1eb099885019d156}\index{RestApi@{RestApi}!getAirQualityIndex@{getAirQualityIndex}}
+\index{getAirQualityIndex@{getAirQualityIndex}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{getAirQualityIndex()}{getAirQualityIndex()}}
+{\footnotesize\ttfamily \label{class_rest_api_af92e8d7a19d3519e1eb099885019d156} 
+void Rest\+Api\+::get\+Air\+Quality\+Index (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Gets the air quality index for a station. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & \doxylink{class_station}{Station} ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_aee873eecd3cf18995b9b0d37427e5b99}\index{RestApi@{RestApi}!getMeasurements@{getMeasurements}}
+\index{getMeasurements@{getMeasurements}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{getMeasurements()}{getMeasurements()}}
+{\footnotesize\ttfamily \label{class_rest_api_aee873eecd3cf18995b9b0d37427e5b99} 
+void Rest\+Api\+::get\+Measurements (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Gets measurements for a sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_adc1e2216bf468b3d3b4ccc36a3483ff0}\index{RestApi@{RestApi}!getSensors@{getSensors}}
+\index{getSensors@{getSensors}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{getSensors()}{getSensors()}}
+{\footnotesize\ttfamily \label{class_rest_api_adc1e2216bf468b3d3b4ccc36a3483ff0} 
+void Rest\+Api\+::get\+Sensors (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Gets sensors for a station. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & \doxylink{class_station}{Station} ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_af7e5c71e1014f6fdfb23dfc0735979a9}\index{RestApi@{RestApi}!getStationsByCity@{getStationsByCity}}
+\index{getStationsByCity@{getStationsByCity}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{getStationsByCity()}{getStationsByCity()}}
+{\footnotesize\ttfamily \label{class_rest_api_af7e5c71e1014f6fdfb23dfc0735979a9} 
+void Rest\+Api\+::get\+Stations\+By\+City (\begin{DoxyParamCaption}\item[{const QString \&}]{city\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Gets stations by city name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city\+Name} & City name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_ac1be4110bebde6eb70bb30f51a97aab5}\index{RestApi@{RestApi}!measurementsReceived@{measurementsReceived}}
+\index{measurementsReceived@{measurementsReceived}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{measurementsReceived}{measurementsReceived}}
+{\footnotesize\ttfamily \label{class_rest_api_ac1be4110bebde6eb70bb30f51a97aab5} 
+void Rest\+Api\+::measurements\+Received (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&}]{measurements}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when measurements are received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em measurements} & List of measurements \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_a0d7f9e99f1990cbd41bfa7e6c7778494}\index{RestApi@{RestApi}!sensorsReceived@{sensorsReceived}}
+\index{sensorsReceived@{sensorsReceived}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{sensorsReceived}{sensorsReceived}}
+{\footnotesize\ttfamily \label{class_rest_api_a0d7f9e99f1990cbd41bfa7e6c7778494} 
+void Rest\+Api\+::sensors\+Received (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ \&}]{sensors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when sensors are received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensors} & List of sensors \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rest_api_a7e569ab47c8257cb1e66ba77cc56deb3}\index{RestApi@{RestApi}!stationsReceived@{stationsReceived}}
+\index{stationsReceived@{stationsReceived}!RestApi@{RestApi}}
+\doxysubsubsection{\texorpdfstring{stationsReceived}{stationsReceived}}
+{\footnotesize\ttfamily \label{class_rest_api_a7e569ab47c8257cb1e66ba77cc56deb3} 
+void Rest\+Api\+::stations\+Received (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ \&}]{stations}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when stations are received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & List of stations \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/api/\mbox{\hyperlink{restapi_8h}{restapi.\+h}}\item 
+build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+8\+\_\+3\+\_\+llvm\+\_\+mingw\+\_\+64\+\_\+bit-\/\+Debug/debug/moc\+\_\+restapi.\+cpp\item 
+src/api/\mbox{\hyperlink{restapi_8cpp}{restapi.\+cpp}}\end{DoxyCompactItemize}

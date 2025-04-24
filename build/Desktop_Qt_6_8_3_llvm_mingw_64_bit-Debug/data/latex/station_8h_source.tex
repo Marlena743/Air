@@ -1,0 +1,59 @@
+\doxysection{station.\+h}
+\hypertarget{station_8h_source}{}\label{station_8h_source}\index{src/data/station.h@{src/data/station.h}}
+\mbox{\hyperlink{station_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ STATION\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#define\ STATION\_H}}
+\DoxyCodeLine{00008\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \#include\ <QString>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \#include\ <QJsonObject>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <QJsonDocument>}}
+\DoxyCodeLine{00012\ \ }
+\DoxyCodeLine{00017\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_station_a73d335726aad1d844d81cda6d9fd74e6}{Station}}}
+\DoxyCodeLine{00018\ \ \{}
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \mbox{\hyperlink{class_station_a73d335726aad1d844d81cda6d9fd74e6}{Station}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \mbox{\hyperlink{class_station_a73d335726aad1d844d81cda6d9fd74e6}{Station}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ QString\ \&name,\ \textcolor{keywordtype}{double}\ latitude,\ \textcolor{keywordtype}{double}\ longitude,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&city,\ \textcolor{keyword}{const}\ QString\ \&address,\ \textcolor{keyword}{const}\ QString\ \&commune,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&district,\ \textcolor{keyword}{const}\ QString\ \&province);}
+\DoxyCodeLine{00040\ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_station_afd0de4c1f7e51648bfe465c5b8b02c88}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_a002231edc6ce25c4136b4fdf235f56b5}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_station_a81d978d665acfa266506a125f78d3637}{getLatitude}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_station_a18be2dd7708a0147ac7112553f0b2646}{getLongitude}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_ac1f4e337601d1d2f309c0cd8c3ad0ecc}{getCity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_a8160b2571e7cf22130c87f7712144a12}{getAddress}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_a61e6244f11bd40d5dfe91ae7a2f5779e}{getCommune}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_a06d77128ea191493a6dd61aadad964a5}{getDistrict}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ \ \ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_station_a834fc73646c33adcf750dca93b940e0a}{getProvince}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_station_a10ecc1eaa7b00b90e034fcff110c756f}{toJson}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_station_a73d335726aad1d844d81cda6d9fd74e6}{Station}}\ \mbox{\hyperlink{class_station_aee29c93a1fb66e8536c416536409bc46}{fromJson}}(\textcolor{keyword}{const}\ QJsonObject\ \&json);}
+\DoxyCodeLine{00107\ \ }
+\DoxyCodeLine{00108\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00109\ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00110\ \ \ \ \ \ QString\ name;}
+\DoxyCodeLine{00111\ \ \ \ \ \ \textcolor{keywordtype}{double}\ latitude;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \textcolor{keywordtype}{double}\ longitude;}
+\DoxyCodeLine{00113\ \ \ \ \ \ QString\ city;}
+\DoxyCodeLine{00114\ \ \ \ \ \ QString\ address;}
+\DoxyCodeLine{00115\ \ \ \ \ \ QString\ commune;}
+\DoxyCodeLine{00116\ \ \ \ \ \ QString\ district;}
+\DoxyCodeLine{00117\ \ \ \ \ \ QString\ province;}
+\DoxyCodeLine{00118\ \ \};}
+\DoxyCodeLine{00119\ \ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\ \#endif\ }\textcolor{comment}{//\ STATION\_H}}
+
+\end{DoxyCode}

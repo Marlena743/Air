@@ -1,0 +1,172 @@
+\doxysection{Measurement Class Reference}
+\hypertarget{class_measurement}{}\label{class_measurement}\index{Measurement@{Measurement}}
+
+
+Represents a measurement value.  
+
+
+
+
+{\ttfamily \#include $<$measurement.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_measurement_a80b305f40c6b3a713e39770de9753666}\label{class_measurement_a80b305f40c6b3a713e39770de9753666} 
+{\bfseries Measurement} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_measurement_a5b0a013aa6dd6970ab28f484206ab953}{Measurement}} (int sensor\+Id, const QString \&param\+Code, const QDate\+Time \&date, double value)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_measurement_aac5bd47e9d3754a324d440e24b443992}{get\+Sensor\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sensor ID. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_measurement_ab582dc458dd050794ffc6d51e6521b48}{get\+Param\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parameter code. \end{DoxyCompactList}\item 
+QDate\+Time \mbox{\hyperlink{class_measurement_af016c61f793a5870fcdffedaab4867a7}{get\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Gets the measurement date and time. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_measurement_a6490193f02e52c5b67d6a8fa162e6e59}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the measurement value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_measurement_a5f6908c35e329530bc57758667ade7c8}{is\+Valid}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the measurement has a valid value. \end{DoxyCompactList}\item 
+QJson\+Object \mbox{\hyperlink{class_measurement_a877c70ce15833caeb37a70dc70198800}{to\+Json}} () const
+\begin{DoxyCompactList}\small\item\em Converts the measurement to JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_measurement}{Measurement}} \mbox{\hyperlink{class_measurement_ae82cec1fad913514271c5c9d2902e15a}{from\+Json}} (const QJson\+Object \&json, int sensor\+Id, const QString \&param\+Code)
+\begin{DoxyCompactList}\small\item\em Creates a measurement from JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a measurement value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_measurement_a5b0a013aa6dd6970ab28f484206ab953}\index{Measurement@{Measurement}!Measurement@{Measurement}}
+\index{Measurement@{Measurement}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{Measurement()}{Measurement()}}
+{\footnotesize\ttfamily \label{class_measurement_a5b0a013aa6dd6970ab28f484206ab953} 
+Measurement\+::\+Measurement (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{, }\item[{const QString \&}]{param\+Code}{, }\item[{const QDate\+Time \&}]{date}{, }\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+{\em param\+Code} & Parameter code \\
+\hline
+{\em date} & \doxylink{class_measurement}{Measurement} date and time \\
+\hline
+{\em value} & \doxylink{class_measurement}{Measurement} value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_measurement_ae82cec1fad913514271c5c9d2902e15a}\index{Measurement@{Measurement}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_measurement_ae82cec1fad913514271c5c9d2902e15a} 
+\mbox{\hyperlink{class_measurement}{Measurement}} Measurement\+::from\+Json (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{json}{, }\item[{int}]{sensor\+Id}{, }\item[{const QString \&}]{param\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a measurement from JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & JSON object \\
+\hline
+{\em sensor\+Id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+{\em param\+Code} & Parameter code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_measurement}{Measurement} object 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_af016c61f793a5870fcdffedaab4867a7}\index{Measurement@{Measurement}!getDate@{getDate}}
+\index{getDate@{getDate}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily \label{class_measurement_af016c61f793a5870fcdffedaab4867a7} 
+QDate\+Time Measurement\+::get\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the measurement date and time. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_measurement}{Measurement} date and time 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_ab582dc458dd050794ffc6d51e6521b48}\index{Measurement@{Measurement}!getParamCode@{getParamCode}}
+\index{getParamCode@{getParamCode}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{getParamCode()}{getParamCode()}}
+{\footnotesize\ttfamily \label{class_measurement_ab582dc458dd050794ffc6d51e6521b48} 
+QString Measurement\+::get\+Param\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the parameter code. 
+
+\begin{DoxyReturn}{Returns}
+Parameter code 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_aac5bd47e9d3754a324d440e24b443992}\index{Measurement@{Measurement}!getSensorId@{getSensorId}}
+\index{getSensorId@{getSensorId}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{getSensorId()}{getSensorId()}}
+{\footnotesize\ttfamily \label{class_measurement_aac5bd47e9d3754a324d440e24b443992} 
+int Measurement\+::get\+Sensor\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the sensor ID. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sensor}{Sensor} ID 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_a6490193f02e52c5b67d6a8fa162e6e59}\index{Measurement@{Measurement}!getValue@{getValue}}
+\index{getValue@{getValue}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_measurement_a6490193f02e52c5b67d6a8fa162e6e59} 
+double Measurement\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the measurement value. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_measurement}{Measurement} value 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_a5f6908c35e329530bc57758667ade7c8}\index{Measurement@{Measurement}!isValid@{isValid}}
+\index{isValid@{isValid}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_measurement_a5f6908c35e329530bc57758667ade7c8} 
+bool Measurement\+::is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks if the measurement has a valid value. 
+
+\begin{DoxyReturn}{Returns}
+True if the value is valid, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_measurement_a877c70ce15833caeb37a70dc70198800}\index{Measurement@{Measurement}!toJson@{toJson}}
+\index{toJson@{toJson}!Measurement@{Measurement}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_measurement_a877c70ce15833caeb37a70dc70198800} 
+QJson\+Object Measurement\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the measurement to JSON. 
+
+\begin{DoxyReturn}{Returns}
+JSON representation of the measurement 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/data/\mbox{\hyperlink{measurement_8h}{measurement.\+h}}\item 
+src/data/\mbox{\hyperlink{measurement_8cpp}{measurement.\+cpp}}\end{DoxyCompactItemize}

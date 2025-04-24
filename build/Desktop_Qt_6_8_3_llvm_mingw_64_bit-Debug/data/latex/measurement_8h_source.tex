@@ -1,0 +1,48 @@
+\doxysection{measurement.\+h}
+\hypertarget{measurement_8h_source}{}\label{measurement_8h_source}\index{src/data/measurement.h@{src/data/measurement.h}}
+\mbox{\hyperlink{measurement_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ MEASUREMENT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#define\ MEASUREMENT\_H}}
+\DoxyCodeLine{00008\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \#include\ <QString>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \#include\ <QDateTime>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <QJsonObject>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \#include\ <QJsonArray>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \#include\ <QJsonDocument>}}
+\DoxyCodeLine{00014\ \ }
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_measurement_a80b305f40c6b3a713e39770de9753666}{Measurement}}}
+\DoxyCodeLine{00020\ \ \{}
+\DoxyCodeLine{00021\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \mbox{\hyperlink{class_measurement_a80b305f40c6b3a713e39770de9753666}{Measurement}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \mbox{\hyperlink{class_measurement_a80b305f40c6b3a713e39770de9753666}{Measurement}}(\textcolor{keywordtype}{int}\ sensorId,\ \textcolor{keyword}{const}\ QString\ \&paramCode,\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDateTime\ \&date,\ \textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00036\ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_measurement_aac5bd47e9d3754a324d440e24b443992}{getSensorId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_measurement_ab582dc458dd050794ffc6d51e6521b48}{getParamCode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ QDateTime\ \mbox{\hyperlink{class_measurement_af016c61f793a5870fcdffedaab4867a7}{getDate}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_measurement_a6490193f02e52c5b67d6a8fa162e6e59}{getValue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_measurement_a5f6908c35e329530bc57758667ade7c8}{isValid}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_measurement_a877c70ce15833caeb37a70dc70198800}{toJson}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ \ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_measurement_a80b305f40c6b3a713e39770de9753666}{Measurement}}\ \mbox{\hyperlink{class_measurement_ae82cec1fad913514271c5c9d2902e15a}{fromJson}}(\textcolor{keyword}{const}\ QJsonObject\ \&json,\ \textcolor{keywordtype}{int}\ sensorId,\ \textcolor{keyword}{const}\ QString\ \&paramCode);}
+\DoxyCodeLine{00081\ \ }
+\DoxyCodeLine{00082\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \textcolor{keywordtype}{int}\ sensorId;}
+\DoxyCodeLine{00084\ \ \ \ \ \ QString\ paramCode;}
+\DoxyCodeLine{00085\ \ \ \ \ \ QDateTime\ date;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \textcolor{keywordtype}{double}\ value;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ valid;}
+\DoxyCodeLine{00088\ \ \};}
+\DoxyCodeLine{00089\ \ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\ \#endif\ }\textcolor{comment}{//\ MEASUREMENT\_H}}
+
+\end{DoxyCode}

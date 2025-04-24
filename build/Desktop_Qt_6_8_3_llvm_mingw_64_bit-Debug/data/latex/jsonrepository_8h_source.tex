@@ -1,0 +1,63 @@
+\doxysection{jsonrepository.\+h}
+\hypertarget{jsonrepository_8h_source}{}\label{jsonrepository_8h_source}\index{src/database/jsonrepository.h@{src/database/jsonrepository.h}}
+\mbox{\hyperlink{jsonrepository_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ JSONREPOSITORY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#define\ JSONREPOSITORY\_H}}
+\DoxyCodeLine{00008\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \#include\ <QObject>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \#include\ <QFile>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <QDir>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \#include\ <QJsonDocument>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \#include\ <QJsonObject>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \#include\ <QJsonArray>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \#include\ <QDateTime>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \#include\ <QMutex>}}
+\DoxyCodeLine{00017\ \ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{station_8h}{../data/station.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{sensor_8h}{../data/sensor.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{measurement_8h}{../data/measurement.h}}"{}}}
+\DoxyCodeLine{00021\ \ }
+\DoxyCodeLine{00026\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_repository_a5ff708fa81b79e732030711a940ed971}{JsonRepository}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00027\ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00029\ \ }
+\DoxyCodeLine{00030\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_repository_a5ff708fa81b79e732030711a940ed971}{JsonRepository}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00036\ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_repository_a27857e97fc6afb0dadbd792901fdf6d5}{saveStations}}(\textcolor{keyword}{const}\ QList<Station>\ \&stations);}
+\DoxyCodeLine{00043\ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \ QList<Station>\ \mbox{\hyperlink{class_json_repository_a68bb197532d317b483fc51b1d5a4bb22}{loadStations}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_repository_a5faa48a5a9871b51809141333a36e1e5}{saveSensors}}(\textcolor{keyword}{const}\ QList<Sensor>\ \&sensors);}
+\DoxyCodeLine{00056\ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \ QList<Sensor>\ \mbox{\hyperlink{class_json_repository_abbf5085ba8a4700494323ff98fd2c023}{loadSensors}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_repository_aab1ee4e3b104ce39972f8ee85e631681}{saveMeasurements}}(\textcolor{keyword}{const}\ QList<Measurement>\ \&measurements,\ \textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00070\ \ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \ QList<Measurement>\ \mbox{\hyperlink{class_json_repository_a43286737373c78bc2bdfaea97ca3aa70}{loadMeasurements}}(\textcolor{keywordtype}{int}\ sensorId,\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDateTime\ \&startDate\ =\ QDateTime(),}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QDateTime\ \&endDate\ =\ QDateTime());}
+\DoxyCodeLine{00081\ \ }
+\DoxyCodeLine{00082\ \ signals:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_repository_a9803149d701d9eff536b35c1e6486a35}{errorOccurred}}(\textcolor{keyword}{const}\ QString\ \&errorMessage);}
+\DoxyCodeLine{00088\ \ }
+\DoxyCodeLine{00089\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ \ \ \ \ \ QMutex\ mutex;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ DATA\_DIR\ =\ \textcolor{stringliteral}{"{}data"{}};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ STATIONS\_FILE\ =\ \textcolor{stringliteral}{"{}stations.json"{}};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ SENSORS\_FILE\ =\ \textcolor{stringliteral}{"{}sensors.json"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ MEASUREMENTS\_FILE\_PREFIX\ =\ \textcolor{stringliteral}{"{}measurements\_"{}};}
+\DoxyCodeLine{00095\ \ \ \ \ \ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ ensureDataDirectoryExists();}
+\DoxyCodeLine{00101\ \ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \ QString\ getFilePath(\textcolor{keyword}{const}\ QString\ \&fileName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00108\ \ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \ QString\ getMeasurementsFileName(\textcolor{keywordtype}{int}\ sensorId)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ \ \};}
+\DoxyCodeLine{00116\ \ }
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\ \#endif\ }\textcolor{comment}{//\ JSONREPOSITORY\_H}}
+
+\end{DoxyCode}

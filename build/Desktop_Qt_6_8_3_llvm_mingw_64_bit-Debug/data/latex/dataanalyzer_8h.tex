@@ -1,0 +1,39 @@
+\doxysection{src/analysis/dataanalyzer.h File Reference}
+\hypertarget{dataanalyzer_8h}{}\label{dataanalyzer_8h}\index{src/analysis/dataanalyzer.h@{src/analysis/dataanalyzer.h}}
+
+
+Header file for the \doxylink{class_data_analyzer}{Data\+Analyzer} class.  
+
+
+{\ttfamily \#include $<$QObject$>$}\newline
+{\ttfamily \#include $<$QList$>$}\newline
+{\ttfamily \#include $<$QPair$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include "{}../data/measurement.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_analysis_result}{Analysis\+Result}}
+\begin{DoxyCompactList}\small\item\em Contains the results of data analysis. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_data_analyzer}{Data\+Analyzer}}
+\begin{DoxyCompactList}\small\item\em Analyzes measurement data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{dataanalyzer_8h_a9e5e8a2ccd2c49cc0912c001fcaabb1a}\label{dataanalyzer_8h_a9e5e8a2ccd2c49cc0912c001fcaabb1a} 
+enum class \mbox{\hyperlink{dataanalyzer_8h_a9e5e8a2ccd2c49cc0912c001fcaabb1a}{Trend\+Type}} \{ \newline
+{\bfseries Increasing}
+, {\bfseries Decreasing}
+, {\bfseries Stable}
+, {\bfseries Fluctuating}
+, \newline
+{\bfseries Unknown}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the trend of measurement values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \doxylink{class_data_analyzer}{Data\+Analyzer} class. 
+

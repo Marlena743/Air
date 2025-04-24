@@ -1,0 +1,34 @@
+## Wymagania techniczne projektu Monitor Jakości Powietrza
+
+# Wymagania systemowe
+- System operacyjny: Windows
+- Qt 5.12 lub nowszy
+- Kompilator C++ z obsługą standardu C++11 (np. MSVC 2017 lub nowszy)
+- Min. 100 MB wolnego miejsca na dysku
+- Połączenie internetowe do pobierania danych z API GIOŚ
+
+# Biblioteki Qt
+- QtCore
+- QtGui
+- QtWidgets
+- QtNetwork (do komunikacji z API)
+- QtCharts (do wyświetlania wykresów)
+
+# Standardy programistyczne
+- Język programowania: C++11
+- Dokumentacja: Doxygen
+- System kontroli wersji: Git
+
+# Minimalne wymagania sprzętowe
+- Procesor: Intel Core i3 lub AMD Ryzen 3 (lub równoważny)
+- Pamięć RAM: 4 GB
+- Rozdzielczość ekranu: 1280x720
+
+# API
+- URL bazowy API GIOŚ: https://api.gios.gov.pl/pjp-api/rest
+- Format zwracanych danych: JSON
+- Dostępne endpointy:
+  - /station/findAll - lista stacji pomiarowych
+  - /station/sensors/{stationId} - lista czujników dla stacji
+  - /data/getData/{sensorId} - dane pomiarowe z czujnika
+  - /aqindex/getIndex/{stationId} - indeks jakości powietrza dla stacji

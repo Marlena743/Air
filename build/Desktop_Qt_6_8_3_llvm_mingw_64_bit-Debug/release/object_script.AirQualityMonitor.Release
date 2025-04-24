@@ -1,0 +1,12 @@
+release/main.o
+release/mainwindow.o
+release/restapi.o
+release/station.o
+release/sensor.o
+release/measurement.o
+release/jsonrepository.o
+release/dataanalyzer.o
+release/moc_mainwindow.o
+release/moc_restapi.o
+release/moc_jsonrepository.o
+release/moc_dataanalyzer.o

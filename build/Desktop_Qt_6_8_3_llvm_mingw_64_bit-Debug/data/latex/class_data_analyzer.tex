@@ -1,0 +1,95 @@
+\doxysection{Data\+Analyzer Class Reference}
+\hypertarget{class_data_analyzer}{}\label{class_data_analyzer}\index{DataAnalyzer@{DataAnalyzer}}
+
+
+Analyzes measurement data.  
+
+
+
+
+{\ttfamily \#include $<$dataanalyzer.\+h$>$}
+
+Inheritance diagram for Data\+Analyzer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_analyzer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_analyzer_a19332d6a19c6649ecc6e66eb52be4878}{Data\+Analyzer}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_analysis_result}{Analysis\+Result}} \mbox{\hyperlink{class_data_analyzer_a3bb4150600e728839a8ccdfada5236a1}{analyze}} (const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&measurements)
+\begin{DoxyCompactList}\small\item\em Analyzes measurement data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static QString \mbox{\hyperlink{class_data_analyzer_a86e098d409695530eeab1837f894c0ef}{get\+Trend\+Description}} (\mbox{\hyperlink{dataanalyzer_8h_a9e5e8a2ccd2c49cc0912c001fcaabb1a}{Trend\+Type}} trend)
+\begin{DoxyCompactList}\small\item\em Gets a textual representation of a trend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Analyzes measurement data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data_analyzer_a19332d6a19c6649ecc6e66eb52be4878}\index{DataAnalyzer@{DataAnalyzer}!DataAnalyzer@{DataAnalyzer}}
+\index{DataAnalyzer@{DataAnalyzer}!DataAnalyzer@{DataAnalyzer}}
+\doxysubsubsection{\texorpdfstring{DataAnalyzer()}{DataAnalyzer()}}
+{\footnotesize\ttfamily \label{class_data_analyzer_a19332d6a19c6649ecc6e66eb52be4878} 
+Data\+Analyzer\+::\+Data\+Analyzer (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_analyzer_a3bb4150600e728839a8ccdfada5236a1}\index{DataAnalyzer@{DataAnalyzer}!analyze@{analyze}}
+\index{analyze@{analyze}!DataAnalyzer@{DataAnalyzer}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily \label{class_data_analyzer_a3bb4150600e728839a8ccdfada5236a1} 
+\mbox{\hyperlink{class_analysis_result}{Analysis\+Result}} Data\+Analyzer\+::analyze (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&}]{measurements}{}\end{DoxyParamCaption})}
+
+
+
+Analyzes measurement data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em measurements} & List of measurements \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Analysis results 
+\end{DoxyReturn}
+\Hypertarget{class_data_analyzer_a86e098d409695530eeab1837f894c0ef}\index{DataAnalyzer@{DataAnalyzer}!getTrendDescription@{getTrendDescription}}
+\index{getTrendDescription@{getTrendDescription}!DataAnalyzer@{DataAnalyzer}}
+\doxysubsubsection{\texorpdfstring{getTrendDescription()}{getTrendDescription()}}
+{\footnotesize\ttfamily \label{class_data_analyzer_a86e098d409695530eeab1837f894c0ef} 
+QString Data\+Analyzer\+::get\+Trend\+Description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dataanalyzer_8h_a9e5e8a2ccd2c49cc0912c001fcaabb1a}{Trend\+Type}}}]{trend}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a textual representation of a trend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trend} & Trend type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Trend description 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/analysis/\mbox{\hyperlink{dataanalyzer_8h}{dataanalyzer.\+h}}\item 
+src/analysis/\mbox{\hyperlink{dataanalyzer_8cpp}{dataanalyzer.\+cpp}}\end{DoxyCompactItemize}

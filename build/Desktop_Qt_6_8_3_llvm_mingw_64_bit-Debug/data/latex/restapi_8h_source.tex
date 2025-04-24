@@ -1,0 +1,79 @@
+\doxysection{restapi.\+h}
+\hypertarget{restapi_8h_source}{}\label{restapi_8h_source}\index{src/api/restapi.h@{src/api/restapi.h}}
+\mbox{\hyperlink{restapi_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ RESTAPI\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#define\ RESTAPI\_H}}
+\DoxyCodeLine{00008\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \#include\ <QObject>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \#include\ <QNetworkAccessManager>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <QNetworkReply>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \#include\ <QNetworkRequest>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \#include\ <QJsonDocument>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \#include\ <QJsonObject>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \#include\ <QJsonArray>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \#include\ <QUrl>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \#include\ <QTimer>}}
+\DoxyCodeLine{00018\ \ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{station_8h}{../data/station.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{sensor_8h}{../data/sensor.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \#include\ "{}\mbox{\hyperlink{measurement_8h}{../data/measurement.h}}"{}}}
+\DoxyCodeLine{00022\ \ }
+\DoxyCodeLine{00027\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rest_api_ab2a49ee69aac9e6b9fadb2cf484b0c17}{RestApi}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00028\ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00030\ \ }
+\DoxyCodeLine{00031\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_rest_api_ab2a49ee69aac9e6b9fadb2cf484b0c17}{RestApi}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00037\ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \mbox{\hyperlink{class_rest_api_af2ea2c30a01ab5a544cd78893d76f612}{\string~RestApi}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_a62dc7e2716bb42a5500446900148716b}{getAllStations}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_af7e5c71e1014f6fdfb23dfc0735979a9}{getStationsByCity}}(\textcolor{keyword}{const}\ QString\ \&cityName);}
+\DoxyCodeLine{00053\ \ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_adc1e2216bf468b3d3b4ccc36a3483ff0}{getSensors}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00059\ \ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_aee873eecd3cf18995b9b0d37427e5b99}{getMeasurements}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00065\ \ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_af92e8d7a19d3519e1eb099885019d156}{getAirQualityIndex}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00071\ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_afcda61c9b847fd79c9fa7b1a4b3ef736}{cancelRequests}}();}
+\DoxyCodeLine{00076\ \ }
+\DoxyCodeLine{00077\ \ signals:}
+\DoxyCodeLine{00082\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_a7e569ab47c8257cb1e66ba77cc56deb3}{stationsReceived}}(\textcolor{keyword}{const}\ QList<Station>\ \&stations);}
+\DoxyCodeLine{00083\ \ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_a0d7f9e99f1990cbd41bfa7e6c7778494}{sensorsReceived}}(\textcolor{keyword}{const}\ QList<Sensor>\ \&sensors);}
+\DoxyCodeLine{00089\ \ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_ac1be4110bebde6eb70bb30f51a97aab5}{measurementsReceived}}(\textcolor{keyword}{const}\ QList<Measurement>\ \&measurements);}
+\DoxyCodeLine{00095\ \ \ \ \ \ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rest_api_a1b6747231d0b6e090484ad07d06dfb4c}{errorOccurred}}(\textcolor{keyword}{const}\ QString\ \&errorMessage);}
+\DoxyCodeLine{00101\ \ }
+\DoxyCodeLine{00102\ \ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00107\ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleNetworkReply(QNetworkReply\ *reply);}
+\DoxyCodeLine{00108\ \ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \textcolor{keywordtype}{void}\ handleTimeout();}
+\DoxyCodeLine{00113\ \ }
+\DoxyCodeLine{00114\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00115\ \ \ \ \ \ QNetworkAccessManager\ *networkManager;}
+\DoxyCodeLine{00116\ \ \ \ \ \ QTimer\ *timeoutTimer;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TIMEOUT\_MS\ =\ 10000;}
+\DoxyCodeLine{00118\ \ \ \ \ \ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ BASE\_URL\ =\ \textcolor{stringliteral}{"{}https://api.gios.gov.pl/pjp-\/api/rest"{}};}
+\DoxyCodeLine{00120\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ STATIONS\_ENDPOINT\ =\ \textcolor{stringliteral}{"{}/station/findAll"{}};}
+\DoxyCodeLine{00121\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ SENSORS\_ENDPOINT\ =\ \textcolor{stringliteral}{"{}/station/sensors"{}};}
+\DoxyCodeLine{00122\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ MEASUREMENTS\_ENDPOINT\ =\ \textcolor{stringliteral}{"{}/data/getData"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ AIR\_QUALITY\_INDEX\_ENDPOINT\ =\ \textcolor{stringliteral}{"{}/aqindex/getIndex"{}};}
+\DoxyCodeLine{00124\ \ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \ QList<Station>\ parseStations(\textcolor{keyword}{const}\ QJsonArray\ \&json);}
+\DoxyCodeLine{00131\ \ \ \ \ \ }
+\DoxyCodeLine{00137\ \ \ \ \ \ QList<Sensor>\ parseSensors(\textcolor{keyword}{const}\ QJsonArray\ \&json);}
+\DoxyCodeLine{00138\ \ \ \ \ \ }
+\DoxyCodeLine{00144\ \ \ \ \ \ QList<Measurement>\ parseMeasurements(\textcolor{keyword}{const}\ QJsonObject\ \&json);}
+\DoxyCodeLine{00145\ \ \};}
+\DoxyCodeLine{00146\ \ }
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\ \#endif\ }\textcolor{comment}{//\ RESTAPI\_H}}
+
+\end{DoxyCode}

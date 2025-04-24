@@ -1,0 +1,238 @@
+\doxysection{Station Class Reference}
+\hypertarget{class_station}{}\label{class_station}\index{Station@{Station}}
+
+
+Represents a measurement station.  
+
+
+
+
+{\ttfamily \#include $<$station.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_station_a73d335726aad1d844d81cda6d9fd74e6}\label{class_station_a73d335726aad1d844d81cda6d9fd74e6} 
+{\bfseries Station} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_station_ae2027fabc4ca28041fb35d159aedbc12}{Station}} (int id, const QString \&name, double latitude, double longitude, const QString \&city, const QString \&address, const QString \&commune, const QString \&district, const QString \&province)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_station_afd0de4c1f7e51648bfe465c5b8b02c88}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the station ID. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_a002231edc6ce25c4136b4fdf235f56b5}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the station name. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_station_a81d978d665acfa266506a125f78d3637}{get\+Latitude}} () const
+\begin{DoxyCompactList}\small\item\em Gets the geographic latitude. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_station_a18be2dd7708a0147ac7112553f0b2646}{get\+Longitude}} () const
+\begin{DoxyCompactList}\small\item\em Gets the geographic longitude. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_ac1f4e337601d1d2f309c0cd8c3ad0ecc}{get\+City}} () const
+\begin{DoxyCompactList}\small\item\em Gets the city name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_a8160b2571e7cf22130c87f7712144a12}{get\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Gets the street address. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_a61e6244f11bd40d5dfe91ae7a2f5779e}{get\+Commune}} () const
+\begin{DoxyCompactList}\small\item\em Gets the commune name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_a06d77128ea191493a6dd61aadad964a5}{get\+District}} () const
+\begin{DoxyCompactList}\small\item\em Gets the district name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_station_a834fc73646c33adcf750dca93b940e0a}{get\+Province}} () const
+\begin{DoxyCompactList}\small\item\em Gets the province name. \end{DoxyCompactList}\item 
+QJson\+Object \mbox{\hyperlink{class_station_a10ecc1eaa7b00b90e034fcff110c756f}{to\+Json}} () const
+\begin{DoxyCompactList}\small\item\em Converts the station to JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_station}{Station}} \mbox{\hyperlink{class_station_aee29c93a1fb66e8536c416536409bc46}{from\+Json}} (const QJson\+Object \&json)
+\begin{DoxyCompactList}\small\item\em Creates a station from JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a measurement station. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_station_ae2027fabc4ca28041fb35d159aedbc12}\index{Station@{Station}!Station@{Station}}
+\index{Station@{Station}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}}
+{\footnotesize\ttfamily \label{class_station_ae2027fabc4ca28041fb35d159aedbc12} 
+Station\+::\+Station (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{const QString \&}]{name}{, }\item[{double}]{latitude}{, }\item[{double}]{longitude}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{address}{, }\item[{const QString \&}]{commune}{, }\item[{const QString \&}]{district}{, }\item[{const QString \&}]{province}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \doxylink{class_station}{Station} ID \\
+\hline
+{\em name} & \doxylink{class_station}{Station} name \\
+\hline
+{\em latitude} & Geographic latitude \\
+\hline
+{\em longitude} & Geographic longitude \\
+\hline
+{\em city} & City name \\
+\hline
+{\em address} & Street address \\
+\hline
+{\em commune} & Commune name \\
+\hline
+{\em district} & District name \\
+\hline
+{\em province} & Province name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_station_aee29c93a1fb66e8536c416536409bc46}\index{Station@{Station}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily \label{class_station_aee29c93a1fb66e8536c416536409bc46} 
+\mbox{\hyperlink{class_station}{Station}} Station\+::from\+Json (\begin{DoxyParamCaption}\item[{const QJson\+Object \&}]{json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a station from JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & JSON object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_station}{Station} object 
+\end{DoxyReturn}
+\Hypertarget{class_station_a8160b2571e7cf22130c87f7712144a12}\index{Station@{Station}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily \label{class_station_a8160b2571e7cf22130c87f7712144a12} 
+QString Station\+::get\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the street address. 
+
+\begin{DoxyReturn}{Returns}
+Street address 
+\end{DoxyReturn}
+\Hypertarget{class_station_ac1f4e337601d1d2f309c0cd8c3ad0ecc}\index{Station@{Station}!getCity@{getCity}}
+\index{getCity@{getCity}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getCity()}{getCity()}}
+{\footnotesize\ttfamily \label{class_station_ac1f4e337601d1d2f309c0cd8c3ad0ecc} 
+QString Station\+::get\+City (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the city name. 
+
+\begin{DoxyReturn}{Returns}
+City name 
+\end{DoxyReturn}
+\Hypertarget{class_station_a61e6244f11bd40d5dfe91ae7a2f5779e}\index{Station@{Station}!getCommune@{getCommune}}
+\index{getCommune@{getCommune}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getCommune()}{getCommune()}}
+{\footnotesize\ttfamily \label{class_station_a61e6244f11bd40d5dfe91ae7a2f5779e} 
+QString Station\+::get\+Commune (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the commune name. 
+
+\begin{DoxyReturn}{Returns}
+Commune name 
+\end{DoxyReturn}
+\Hypertarget{class_station_a06d77128ea191493a6dd61aadad964a5}\index{Station@{Station}!getDistrict@{getDistrict}}
+\index{getDistrict@{getDistrict}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getDistrict()}{getDistrict()}}
+{\footnotesize\ttfamily \label{class_station_a06d77128ea191493a6dd61aadad964a5} 
+QString Station\+::get\+District (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the district name. 
+
+\begin{DoxyReturn}{Returns}
+District name 
+\end{DoxyReturn}
+\Hypertarget{class_station_afd0de4c1f7e51648bfe465c5b8b02c88}\index{Station@{Station}!getId@{getId}}
+\index{getId@{getId}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_station_afd0de4c1f7e51648bfe465c5b8b02c88} 
+int Station\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the station ID. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_station}{Station} ID 
+\end{DoxyReturn}
+\Hypertarget{class_station_a81d978d665acfa266506a125f78d3637}\index{Station@{Station}!getLatitude@{getLatitude}}
+\index{getLatitude@{getLatitude}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getLatitude()}{getLatitude()}}
+{\footnotesize\ttfamily \label{class_station_a81d978d665acfa266506a125f78d3637} 
+double Station\+::get\+Latitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the geographic latitude. 
+
+\begin{DoxyReturn}{Returns}
+Geographic latitude 
+\end{DoxyReturn}
+\Hypertarget{class_station_a18be2dd7708a0147ac7112553f0b2646}\index{Station@{Station}!getLongitude@{getLongitude}}
+\index{getLongitude@{getLongitude}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getLongitude()}{getLongitude()}}
+{\footnotesize\ttfamily \label{class_station_a18be2dd7708a0147ac7112553f0b2646} 
+double Station\+::get\+Longitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the geographic longitude. 
+
+\begin{DoxyReturn}{Returns}
+Geographic longitude 
+\end{DoxyReturn}
+\Hypertarget{class_station_a002231edc6ce25c4136b4fdf235f56b5}\index{Station@{Station}!getName@{getName}}
+\index{getName@{getName}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_station_a002231edc6ce25c4136b4fdf235f56b5} 
+QString Station\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the station name. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_station}{Station} name 
+\end{DoxyReturn}
+\Hypertarget{class_station_a834fc73646c33adcf750dca93b940e0a}\index{Station@{Station}!getProvince@{getProvince}}
+\index{getProvince@{getProvince}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getProvince()}{getProvince()}}
+{\footnotesize\ttfamily \label{class_station_a834fc73646c33adcf750dca93b940e0a} 
+QString Station\+::get\+Province (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the province name. 
+
+\begin{DoxyReturn}{Returns}
+Province name 
+\end{DoxyReturn}
+\Hypertarget{class_station_a10ecc1eaa7b00b90e034fcff110c756f}\index{Station@{Station}!toJson@{toJson}}
+\index{toJson@{toJson}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily \label{class_station_a10ecc1eaa7b00b90e034fcff110c756f} 
+QJson\+Object Station\+::to\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the station to JSON. 
+
+\begin{DoxyReturn}{Returns}
+JSON representation of the station 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/data/\mbox{\hyperlink{station_8h}{station.\+h}}\item 
+src/data/\mbox{\hyperlink{station_8cpp}{station.\+cpp}}\end{DoxyCompactItemize}

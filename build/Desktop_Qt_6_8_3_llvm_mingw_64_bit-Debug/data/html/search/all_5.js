@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['getaddress_0',['getAddress',['../class_station.html#a8160b2571e7cf22130c87f7712144a12',1,'Station']]],
+  ['getairqualityindex_1',['getAirQualityIndex',['../class_rest_api.html#af92e8d7a19d3519e1eb099885019d156',1,'RestApi']]],
+  ['getallstations_2',['getAllStations',['../class_rest_api.html#a62dc7e2716bb42a5500446900148716b',1,'RestApi']]],
+  ['getcity_3',['getCity',['../class_station.html#ac1f4e337601d1d2f309c0cd8c3ad0ecc',1,'Station']]],
+  ['getcommune_4',['getCommune',['../class_station.html#a61e6244f11bd40d5dfe91ae7a2f5779e',1,'Station']]],
+  ['getdate_5',['getDate',['../class_measurement.html#af016c61f793a5870fcdffedaab4867a7',1,'Measurement']]],
+  ['getdistrict_6',['getDistrict',['../class_station.html#a06d77128ea191493a6dd61aadad964a5',1,'Station']]],
+  ['getid_7',['getId',['../class_sensor.html#a2f57593dc57b88e0667907e282b4e2ef',1,'Sensor::getId()'],['../class_station.html#afd0de4c1f7e51648bfe465c5b8b02c88',1,'Station::getId()']]],
+  ['getidparam_8',['getIdParam',['../class_sensor.html#ab7dd219217cf6e2e084167ab8cb9f99f',1,'Sensor']]],
+  ['getlatitude_9',['getLatitude',['../class_station.html#a81d978d665acfa266506a125f78d3637',1,'Station']]],
+  ['getlongitude_10',['getLongitude',['../class_station.html#a18be2dd7708a0147ac7112553f0b2646',1,'Station']]],
+  ['getmeasurements_11',['getMeasurements',['../class_rest_api.html#aee873eecd3cf18995b9b0d37427e5b99',1,'RestApi']]],
+  ['getname_12',['getName',['../class_station.html#a002231edc6ce25c4136b4fdf235f56b5',1,'Station']]],
+  ['getparamcode_13',['getParamCode',['../class_measurement.html#ab582dc458dd050794ffc6d51e6521b48',1,'Measurement::getParamCode()'],['../class_sensor.html#adc236a58d76be5e97d05c76a3b397c58',1,'Sensor::getParamCode() const']]],
+  ['getparamformula_14',['getParamFormula',['../class_sensor.html#ab6dc67a12cdfef08de45f6f434056a63',1,'Sensor']]],
+  ['getparamname_15',['getParamName',['../class_sensor.html#a73dd54567fd9b1f459e2a905fb8c6844',1,'Sensor']]],
+  ['getprovince_16',['getProvince',['../class_station.html#a834fc73646c33adcf750dca93b940e0a',1,'Station']]],
+  ['getsensorid_17',['getSensorId',['../class_measurement.html#aac5bd47e9d3754a324d440e24b443992',1,'Measurement']]],
+  ['getsensors_18',['getSensors',['../class_rest_api.html#adc1e2216bf468b3d3b4ccc36a3483ff0',1,'RestApi']]],
+  ['getstationid_19',['getStationId',['../class_sensor.html#a7016ff1ef9122ffff86056a952c09e84',1,'Sensor']]],
+  ['getstationsbycity_20',['getStationsByCity',['../class_rest_api.html#af7e5c71e1014f6fdfb23dfc0735979a9',1,'RestApi']]],
+  ['gettrenddescription_21',['getTrendDescription',['../class_data_analyzer.html#a86e098d409695530eeab1837f894c0ef',1,'DataAnalyzer']]],
+  ['getvalue_22',['getValue',['../class_measurement.html#a6490193f02e52c5b67d6a8fa162e6e59',1,'Measurement']]]
+];

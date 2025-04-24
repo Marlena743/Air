@@ -1,0 +1,471 @@
+[
+    {
+        "date": "2025-04-23T19:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 795
+    },
+    {
+        "date": "2025-04-23T18:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 864
+    },
+    {
+        "date": "2025-04-23T17:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 814
+    },
+    {
+        "date": "2025-04-23T16:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 839
+    },
+    {
+        "date": "2025-04-23T15:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 834
+    },
+    {
+        "date": "2025-04-23T14:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 775
+    },
+    {
+        "date": "2025-04-23T13:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 752
+    },
+    {
+        "date": "2025-04-23T12:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 829
+    },
+    {
+        "date": "2025-04-23T11:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 841
+    },
+    {
+        "date": "2025-04-23T10:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 829
+    },
+    {
+        "date": "2025-04-23T09:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 998
+    },
+    {
+        "date": "2025-04-23T08:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1158
+    },
+    {
+        "date": "2025-04-23T07:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1111
+    },
+    {
+        "date": "2025-04-23T06:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 853
+    },
+    {
+        "date": "2025-04-23T05:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 806
+    },
+    {
+        "date": "2025-04-23T04:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 819
+    },
+    {
+        "date": "2025-04-23T03:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 801
+    },
+    {
+        "date": "2025-04-23T02:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 877
+    },
+    {
+        "date": "2025-04-23T01:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 873
+    },
+    {
+        "date": "2025-04-23T00:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1027
+    },
+    {
+        "date": "2025-04-22T23:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1264
+    },
+    {
+        "date": "2025-04-22T22:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1151
+    },
+    {
+        "date": "2025-04-22T21:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1167
+    },
+    {
+        "date": "2025-04-22T20:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 969
+    },
+    {
+        "date": "2025-04-22T19:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 957
+    },
+    {
+        "date": "2025-04-22T18:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 930
+    },
+    {
+        "date": "2025-04-22T17:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 844
+    },
+    {
+        "date": "2025-04-22T16:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 866
+    },
+    {
+        "date": "2025-04-22T15:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 839
+    },
+    {
+        "date": "2025-04-22T14:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 795
+    },
+    {
+        "date": "2025-04-22T13:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 868
+    },
+    {
+        "date": "2025-04-22T12:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 993
+    },
+    {
+        "date": "2025-04-22T11:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 873
+    },
+    {
+        "date": "2025-04-22T10:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 878
+    },
+    {
+        "date": "2025-04-22T09:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 899
+    },
+    {
+        "date": "2025-04-22T08:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 998
+    },
+    {
+        "date": "2025-04-22T07:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 916
+    },
+    {
+        "date": "2025-04-22T06:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 793
+    },
+    {
+        "date": "2025-04-22T05:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 851
+    },
+    {
+        "date": "2025-04-22T04:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 812
+    },
+    {
+        "date": "2025-04-22T03:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 740
+    },
+    {
+        "date": "2025-04-22T02:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 834
+    },
+    {
+        "date": "2025-04-22T01:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 988
+    },
+    {
+        "date": "2025-04-22T00:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 968
+    },
+    {
+        "date": "2025-04-21T23:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1018.9999999999999
+    },
+    {
+        "date": "2025-04-21T22:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1179
+    },
+    {
+        "date": "2025-04-21T21:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1227
+    },
+    {
+        "date": "2025-04-21T20:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 1142
+    },
+    {
+        "date": "2025-04-21T19:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 970
+    },
+    {
+        "date": "2025-04-21T18:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 930
+    },
+    {
+        "date": "2025-04-21T17:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 764
+    },
+    {
+        "date": "2025-04-21T16:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 822
+    },
+    {
+        "date": "2025-04-21T15:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 791
+    },
+    {
+        "date": "2025-04-21T14:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 779
+    },
+    {
+        "date": "2025-04-21T13:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 732
+    },
+    {
+        "date": "2025-04-21T12:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 0
+    },
+    {
+        "date": "2025-04-21T11:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 773
+    },
+    {
+        "date": "2025-04-21T10:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 767
+    },
+    {
+        "date": "2025-04-21T09:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 814
+    },
+    {
+        "date": "2025-04-21T08:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 816
+    },
+    {
+        "date": "2025-04-21T07:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 866
+    },
+    {
+        "date": "2025-04-21T06:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 760
+    },
+    {
+        "date": "2025-04-21T05:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 760
+    },
+    {
+        "date": "2025-04-21T04:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 752
+    },
+    {
+        "date": "2025-04-21T03:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 815
+    },
+    {
+        "date": "2025-04-21T02:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 862
+    },
+    {
+        "date": "2025-04-21T01:00:00",
+        "paramCode": "CO",
+        "sensorId": 0,
+        "valid": true,
+        "value": 0
+    }
+]

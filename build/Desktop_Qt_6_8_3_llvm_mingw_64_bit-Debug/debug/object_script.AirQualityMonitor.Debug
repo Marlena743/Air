@@ -1,0 +1,12 @@
+debug/main.o
+debug/mainwindow.o
+debug/restapi.o
+debug/station.o
+debug/sensor.o
+debug/measurement.o
+debug/jsonrepository.o
+debug/dataanalyzer.o
+debug/moc_mainwindow.o
+debug/moc_restapi.o
+debug/moc_jsonrepository.o
+debug/moc_dataanalyzer.o

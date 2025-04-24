@@ -1,0 +1,189 @@
+\doxysection{Json\+Repository Class Reference}
+\hypertarget{class_json_repository}{}\label{class_json_repository}\index{JsonRepository@{JsonRepository}}
+
+
+Repository for storing and retrieving data in JSON format.  
+
+
+
+
+{\ttfamily \#include $<$jsonrepository.\+h$>$}
+
+Inheritance diagram for Json\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_json_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_json_repository_a9803149d701d9eff536b35c1e6486a35}{error\+Occurred}} (const QString \&error\+Message)
+\begin{DoxyCompactList}\small\item\em Signal emitted when an error occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_repository_a5ff708fa81b79e732030711a940ed971}{Json\+Repository}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_repository_a27857e97fc6afb0dadbd792901fdf6d5}{save\+Stations}} (const QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ \&stations)
+\begin{DoxyCompactList}\small\item\em Saves stations to a JSON file. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ \mbox{\hyperlink{class_json_repository_a68bb197532d317b483fc51b1d5a4bb22}{load\+Stations}} ()
+\begin{DoxyCompactList}\small\item\em Loads stations from a JSON file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_repository_a5faa48a5a9871b51809141333a36e1e5}{save\+Sensors}} (const QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ \&sensors)
+\begin{DoxyCompactList}\small\item\em Saves sensors to a JSON file. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ \mbox{\hyperlink{class_json_repository_abbf5085ba8a4700494323ff98fd2c023}{load\+Sensors}} ()
+\begin{DoxyCompactList}\small\item\em Loads sensors from a JSON file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_repository_aab1ee4e3b104ce39972f8ee85e631681}{save\+Measurements}} (const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&measurements, int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em Saves measurements to a JSON file. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \mbox{\hyperlink{class_json_repository_a43286737373c78bc2bdfaea97ca3aa70}{load\+Measurements}} (int sensor\+Id, const QDate\+Time \&start\+Date=QDate\+Time(), const QDate\+Time \&end\+Date=QDate\+Time())
+\begin{DoxyCompactList}\small\item\em Loads measurements from a JSON file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repository for storing and retrieving data in JSON format. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_repository_a5ff708fa81b79e732030711a940ed971}\index{JsonRepository@{JsonRepository}!JsonRepository@{JsonRepository}}
+\index{JsonRepository@{JsonRepository}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{JsonRepository()}{JsonRepository()}}
+{\footnotesize\ttfamily \label{class_json_repository_a5ff708fa81b79e732030711a940ed971} 
+Json\+Repository\+::\+Json\+Repository (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_repository_a9803149d701d9eff536b35c1e6486a35}\index{JsonRepository@{JsonRepository}!errorOccurred@{errorOccurred}}
+\index{errorOccurred@{errorOccurred}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{errorOccurred}{errorOccurred}}
+{\footnotesize\ttfamily \label{class_json_repository_a9803149d701d9eff536b35c1e6486a35} 
+void Json\+Repository\+::error\+Occurred (\begin{DoxyParamCaption}\item[{const QString \&}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when an error occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Message} & Error message \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_repository_a43286737373c78bc2bdfaea97ca3aa70}\index{JsonRepository@{JsonRepository}!loadMeasurements@{loadMeasurements}}
+\index{loadMeasurements@{loadMeasurements}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{loadMeasurements()}{loadMeasurements()}}
+{\footnotesize\ttfamily \label{class_json_repository_a43286737373c78bc2bdfaea97ca3aa70} 
+QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ Json\+Repository\+::load\+Measurements (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{, }\item[{const QDate\+Time \&}]{start\+Date}{ = {\ttfamily QDateTime()}, }\item[{const QDate\+Time \&}]{end\+Date}{ = {\ttfamily QDateTime()}}\end{DoxyParamCaption})}
+
+
+
+Loads measurements from a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+{\em start\+Date} & Start date (optional) \\
+\hline
+{\em end\+Date} & End date (optional) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of measurements 
+\end{DoxyReturn}
+\Hypertarget{class_json_repository_abbf5085ba8a4700494323ff98fd2c023}\index{JsonRepository@{JsonRepository}!loadSensors@{loadSensors}}
+\index{loadSensors@{loadSensors}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{loadSensors()}{loadSensors()}}
+{\footnotesize\ttfamily \label{class_json_repository_abbf5085ba8a4700494323ff98fd2c023} 
+QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ Json\+Repository\+::load\+Sensors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads sensors from a JSON file. 
+
+\begin{DoxyReturn}{Returns}
+List of sensors 
+\end{DoxyReturn}
+\Hypertarget{class_json_repository_a68bb197532d317b483fc51b1d5a4bb22}\index{JsonRepository@{JsonRepository}!loadStations@{loadStations}}
+\index{loadStations@{loadStations}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{loadStations()}{loadStations()}}
+{\footnotesize\ttfamily \label{class_json_repository_a68bb197532d317b483fc51b1d5a4bb22} 
+QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ Json\+Repository\+::load\+Stations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads stations from a JSON file. 
+
+\begin{DoxyReturn}{Returns}
+List of stations 
+\end{DoxyReturn}
+\Hypertarget{class_json_repository_aab1ee4e3b104ce39972f8ee85e631681}\index{JsonRepository@{JsonRepository}!saveMeasurements@{saveMeasurements}}
+\index{saveMeasurements@{saveMeasurements}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{saveMeasurements()}{saveMeasurements()}}
+{\footnotesize\ttfamily \label{class_json_repository_aab1ee4e3b104ce39972f8ee85e631681} 
+bool Json\+Repository\+::save\+Measurements (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_measurement}{Measurement}} $>$ \&}]{measurements}{, }\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Saves measurements to a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em measurements} & List of measurements \\
+\hline
+{\em sensor\+Id} & \doxylink{class_sensor}{Sensor} ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_json_repository_a5faa48a5a9871b51809141333a36e1e5}\index{JsonRepository@{JsonRepository}!saveSensors@{saveSensors}}
+\index{saveSensors@{saveSensors}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{saveSensors()}{saveSensors()}}
+{\footnotesize\ttfamily \label{class_json_repository_a5faa48a5a9871b51809141333a36e1e5} 
+bool Json\+Repository\+::save\+Sensors (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_sensor}{Sensor}} $>$ \&}]{sensors}{}\end{DoxyParamCaption})}
+
+
+
+Saves sensors to a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensors} & List of sensors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_json_repository_a27857e97fc6afb0dadbd792901fdf6d5}\index{JsonRepository@{JsonRepository}!saveStations@{saveStations}}
+\index{saveStations@{saveStations}!JsonRepository@{JsonRepository}}
+\doxysubsubsection{\texorpdfstring{saveStations()}{saveStations()}}
+{\footnotesize\ttfamily \label{class_json_repository_a27857e97fc6afb0dadbd792901fdf6d5} 
+bool Json\+Repository\+::save\+Stations (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_station}{Station}} $>$ \&}]{stations}{}\end{DoxyParamCaption})}
+
+
+
+Saves stations to a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & List of stations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/database/\mbox{\hyperlink{jsonrepository_8h}{jsonrepository.\+h}}\item 
+build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+8\+\_\+3\+\_\+llvm\+\_\+mingw\+\_\+64\+\_\+bit-\/\+Debug/debug/moc\+\_\+jsonrepository.\+cpp\item 
+src/database/\mbox{\hyperlink{jsonrepository_8cpp}{jsonrepository.\+cpp}}\end{DoxyCompactItemize}

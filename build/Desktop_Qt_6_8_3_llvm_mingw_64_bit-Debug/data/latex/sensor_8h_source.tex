@@ -1,0 +1,49 @@
+\doxysection{sensor.\+h}
+\hypertarget{sensor_8h_source}{}\label{sensor_8h_source}\index{src/data/sensor.h@{src/data/sensor.h}}
+\mbox{\hyperlink{sensor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \#ifndef\ SENSOR\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \#define\ SENSOR\_H}}
+\DoxyCodeLine{00008\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \#include\ <QString>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \#include\ <QJsonObject>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <QJsonDocument>}}
+\DoxyCodeLine{00012\ \ }
+\DoxyCodeLine{00017\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}}
+\DoxyCodeLine{00018\ \ \{}
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \mbox{\hyperlink{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \mbox{\hyperlink{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ stationId,\ \textcolor{keyword}{const}\ QString\ \&paramName,\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\ \&paramFormula,\ \textcolor{keyword}{const}\ QString\ \&paramCode,\ \textcolor{keywordtype}{int}\ idParam);}
+\DoxyCodeLine{00036\ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sensor_a2f57593dc57b88e0667907e282b4e2ef}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sensor_a7016ff1ef9122ffff86056a952c09e84}{getStationId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_sensor_a73dd54567fd9b1f459e2a905fb8c6844}{getParamName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_sensor_ab6dc67a12cdfef08de45f6f434056a63}{getParamFormula}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \ QString\ \mbox{\hyperlink{class_sensor_adc236a58d76be5e97d05c76a3b397c58}{getParamCode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sensor_ab7dd219217cf6e2e084167ab8cb9f99f}{getIdParam}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ \ \ \ \ \ }
+\DoxyCodeLine{00077\ \ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_sensor_a76ff4b46ff7bf80bf47a944dde15f7c5}{toJson}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ \ \ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}\ \mbox{\hyperlink{class_sensor_a7886a1b1ce6e2bdb1071a665c097fb27}{fromJson}}(\textcolor{keyword}{const}\ QJsonObject\ \&json);}
+\DoxyCodeLine{00085\ \ }
+\DoxyCodeLine{00086\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \textcolor{keywordtype}{int}\ stationId;}
+\DoxyCodeLine{00089\ \ \ \ \ \ QString\ paramName;}
+\DoxyCodeLine{00090\ \ \ \ \ \ QString\ paramFormula;}
+\DoxyCodeLine{00091\ \ \ \ \ \ QString\ paramCode;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \textcolor{keywordtype}{int}\ idParam;}
+\DoxyCodeLine{00093\ \ \};}
+\DoxyCodeLine{00094\ \ }
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\ \#endif\ }\textcolor{comment}{//\ SENSOR\_H}}
+
+\end{DoxyCode}
